@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#F8F8FF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home_page">
+
+    <!-- Search Bar -->
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Fruits Section -->
+    <ImageView
+        android:id="@+id/fruits_section"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/fruit_basket" />
+
+    <Button
+        android:id="@+id/fruits_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#7E7A7A"
+        android:text="View Fruits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fruits_section" />
+
+    <!-- Vegetables Section -->
+    <ImageView
+        android:id="@+id/vegetables_section"
+        android:layout_width="240dp"
+        android:layout_height="180dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/fruits_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/vegetable_basket" />
+
+    <Button
+        android:id="@+id/vegetables_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Vegetables"
+        app:layout_constraintTop_toBottomOf="@+id/vegetables_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Dairy Produce Section -->
+    <ImageView
+        android:id="@+id/dairy_section"
+        android:layout_width="200dp"
+        android:layout_height="140dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/vegetables_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/fd780a5329a7547550b990e9d6368ca5" />
+
+    <Button
+        android:id="@+id/dairy_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Dairy"
+        app:layout_constraintTop_toBottomOf="@+id/dairy_section"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
