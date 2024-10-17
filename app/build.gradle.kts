@@ -48,4 +48,6 @@ dependencies {
     val lottieVersion = "6.0.0"
     implementation("com.airbnb.android:lottie-compose:$lottieVersion")
     implementation("androidx.cardview:cardview:1.0.0")
+    implementation ("com.google.android.material:material:1.4.0")
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
 }
